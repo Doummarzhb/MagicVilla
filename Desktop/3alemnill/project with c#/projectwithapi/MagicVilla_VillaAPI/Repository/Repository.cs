@@ -1,0 +1,100 @@
+﻿using MagicVilla_VillaAPI.Data;
+using MagicVilla_VillaAPI.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
+
+namespace MagicVilla_VillaAPI.Repository
+{
+	public class Repository<T> : IRepository<T> where T : class
+	{
+		private readonly ApplicationDbContext _db;
+		internal DbSet<T> dbSet;
+		public Repository(ApplicationDbContext db)
+		{
+			_db = db;
+			this.dbSet=_db.Set<T>();
+		}
+		public async Task CreateAsync(T entity)
+		{
+			await dbSet.AddAsync(entity);
+			await SaveAsync();
+
+		}
+
+		//private Task SaveAsync()
+		//{
+		//	throw new NotImplementedException();
+		//}
+
+		public async Task<T> GetAsync(Expression<Func<T, bool>> filter = null, bool tracked = true)
+		{
+			IQueryable<T> query = dbSet;
+			if (filter != null)
+			{
+				query = query.AsNoTracking();
+			}
+			return await query.FirstOrDefaultAsync();
+		}
+
+		//public async Task<List<Villa>> GetAll(Expression<Func<Villa, bool>> filter = null)
+		public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> filter)
+		{
+			IQueryable<T> query = dbSet;
+			if (filter != null)
+			{
+				query = query.Where(filter);
+			}
+			return await query.ToListAsync();
+
+		}
+
+		public async Task RemoveAsync(T entity)
+		{
+			dbSet.Remove(entity);
+			await SaveAsync();
+
+
+		}
+
+		public async Task SaveAsync()
+		{
+			await _db.SaveChangesAsync();
+		}
+
+		public Task<List<Villa>> GetAllasync(Expression<Func<T, bool>> filter = null)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<Villa> Get(Expression<Func<T, bool>>? filter = null, bool tracked = true)
+		{
+			throw new NotImplementedException();
+		}
+
+		//public Task<List<Villa>> GetAllasync(Expression<Func<Villa, bool>> filter = null)
+		//{
+		//	throw new NotImplementedException();
+		//}
+
+		//public Task<Villa> Get(Expression<Func<Villa, bool>> filter = null, bool tracked = true)
+		//{
+		//	throw new NotImplementedException();
+		//}
+
+		//public Task GetAsync(Func<object, bool> value)
+		//{
+		//	throw new NotImplementedException();
+		//}
+
+		//public Task<IEnumerable<Villa>> GetAllAsync()
+		//{
+		//	throw new NotImplementedException();
+		//}
+
+		//public async Task UpdateAsync(Villa entity)
+		//{
+		//	_db.Villas.Update(entity);
+		//	await SaveAsync();
+		//}
+	}
+}

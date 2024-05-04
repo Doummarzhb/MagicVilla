@@ -4863,11 +4863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
       "projectName": "MagicVilla_VillaAPI",
-      "projectPath": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_VillaAPI\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_VillaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4884,8 +4884,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_Web\\MagicVilla_Web.csproj": {
-              "projectPath": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_Web\\MagicVilla_Web.csproj"
+            "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_Web\\MagicVilla_Web.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_Web\\MagicVilla_Web.csproj"
             }
           }
         }

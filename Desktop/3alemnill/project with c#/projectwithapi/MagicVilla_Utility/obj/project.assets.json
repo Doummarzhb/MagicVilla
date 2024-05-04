@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_Utility\\MagicVilla_Utility.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_Utility\\MagicVilla_Utility.csproj",
       "projectName": "MagicVilla_Utility",
-      "projectPath": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_Utility\\MagicVilla_Utility.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_Utility\\MagicVilla_Utility.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\source\\repos\\loginregistration\\MagicVilla_VillaAPI\\MagicVilla_Utility\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\3alemnill\\project with c#\\projectwithapi\\MagicVilla_Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
